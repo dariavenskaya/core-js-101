@@ -232,6 +232,8 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(/* value, def */) {
+  // const res = Number(value);
+  // return typeof res === 'number' ? res : def;
   throw new Error('Not implemented');
 }
 
