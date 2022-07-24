@@ -250,9 +250,8 @@ function getMovingSum(/* arr */) {
  * [ 'a', 'b', 'c' , null ]  => [ "b", null ]
  * [ "a" ] => []
  */
-function getSecondItems(/* arr */) {
-  throw new Error('Not implemented');
-  // return arr.map((el) => arr.indexOf(el) % 2 === 1);
+function getSecondItems(arr) {
+  return arr.filter((el) => arr.indexOf(el) % 2 === 1);
 }
 
 
