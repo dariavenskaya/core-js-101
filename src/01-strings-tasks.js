@@ -204,6 +204,10 @@ function extractEmails(str) {
  */
 function getRectangleString(/* width, height */) {
   throw new Error('Not implemented');
+  // const tl = `┌` + `─`.repeat(width - 2) + `┐\n`;
+  // const ml = `│` + ` `.repeat(width - 2) + `│\n`;
+  // const dl = `└` + `─`.repeat(width - 2) + `┘\n`;
+  // return tl + ml.repeat(height - 2) + dl;
 }
 
 
@@ -273,6 +277,8 @@ function isString(value) {
  */
 function getCardId(/* value */) {
   throw new Error('Not implemented');
+  // const arr = value.split(',');
+  // return arr.findIndex();
 }
 
 
