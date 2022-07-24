@@ -307,6 +307,7 @@ function get3TopItems(arr) {
  */
 function getPositivesCount(/* arr */) {
   throw new Error('Not implemented');
+  // return arr.filter((el) => typeof el === 'number' && el > 0);
 }
 
 /**
@@ -338,9 +339,9 @@ function sortDigitNamesByNumericOrder(/* arr */) {
  *   [ -1, 1, -1, 1 ]      => 0
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
-function getItemsSum(/* arr */) {
-  throw new Error('Not implemented');
-  // return arr.reduce((a, b) => a + b) ? arr.reduce((a, b) => a + b) : 0;
+function getItemsSum(arr) {
+  // throw new Error('Not implemented');
+  return arr.reduce((a, b) => a + b, 0);
 }
 
 /**
