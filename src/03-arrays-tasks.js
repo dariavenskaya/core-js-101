@@ -340,7 +340,6 @@ function sortDigitNamesByNumericOrder(/* arr */) {
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
 function getItemsSum(arr) {
-  // throw new Error('Not implemented');
   return arr.reduce((a, b) => a + b, 0);
 }
 
@@ -358,6 +357,7 @@ function getItemsSum(arr) {
  */
 function getFalsyValuesCount(/* arr */) {
   throw new Error('Not implemented');
+  // return arr.filter(Boolean).length();
 }
 
 /**
@@ -374,8 +374,9 @@ function getFalsyValuesCount(/* arr */) {
  *    [ null, undefined, null ], null => 2
  *    [ true, 0, 1, 'true' ], true => 1
  */
-function findAllOccurrences(/* arr, item */) {
-  throw new Error('Not implemented');
+function findAllOccurrences(arr, item) {
+  // throw new Error('Not implemented');
+  return arr.reduce((n, x) => n + (x === item), 0);
 }
 
 /**
