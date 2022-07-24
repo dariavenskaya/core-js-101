@@ -70,7 +70,6 @@ function doubleArray(/* arr */) {
  *    [] => []
  */
 function getArrayOfPositives(arr) {
-  // throw new Error('Not implemented');
   return arr.filter((el) => el > 0);
 }
 
@@ -102,10 +101,10 @@ function getArrayOfStrings(arr) {
  *    [ 1, 2, 3, 4, 5, 'false' ]         => [ 1, 2, 3, 4, 5, 'false' ]
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
-function removeFalsyValues(/* arr */) {
-  throw new Error('Not implemented');
-  // return arr.filter((el) => el !== false || NaN || 0 || undefined || '');
+function removeFalsyValues(arr) {
+  return arr.filter(Boolean);
 }
+
 
 /**
  * Returns the array of uppercase strings from the specified array
