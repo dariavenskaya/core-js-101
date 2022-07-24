@@ -37,6 +37,7 @@ function findElement(arr, value) {
  */
 function generateOdds(/* len */) {
   throw new Error('Not implemented');
+  // return [...Array(len)].map((el) => /* el % 2 !== 0 && */typeof el === 'number');
 }
 
 
@@ -68,8 +69,9 @@ function doubleArray(/* arr */) {
  *    [-1, 2, -5, -4, 0] => [ 2 ]
  *    [] => []
  */
-function getArrayOfPositives(/* arr */) {
-  throw new Error('Not implemented');
+function getArrayOfPositives(arr) {
+  // throw new Error('Not implemented');
+  return arr.filter((el) => el > 0);
 }
 
 /**
