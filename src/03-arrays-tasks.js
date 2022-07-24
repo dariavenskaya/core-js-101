@@ -375,7 +375,6 @@ function getFalsyValuesCount(/* arr */) {
  *    [ true, 0, 1, 'true' ], true => 1
  */
 function findAllOccurrences(arr, item) {
-  // throw new Error('Not implemented');
   return arr.reduce((n, x) => n + (x === item), 0);
 }
 
@@ -567,8 +566,15 @@ function getElementByIndexes(/* arr, indexes */) {
  *   [ 1, 2, 3, 4, 5, 6, 7, 8 ]   =>  [ 5, 6, 7, 8, 1, 2, 3, 4 ]
  *
  */
-function swapHeadAndTail(/* arr */) {
-  throw new Error('Not implemented');
+function swapHeadAndTail(arr) {
+  // throw new Error('Not implemented');
+  const head = arr.slice(0, Math.round((arr.length - 1) / 2));
+  const tail = arr.slice(Math.round(arr.length / 2), arr.length);
+  const center = arr.slice(
+    Math.round((arr.length - 1) / 2),
+    Math.round(arr.length / 2),
+  );
+  return [].concat(tail, center, head);
 }
 
 
