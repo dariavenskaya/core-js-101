@@ -303,11 +303,10 @@ function get3TopItems(arr) {
  *   [ null, 1, 'elephant' ] => 1
  *   [ 1, '2' ] => 1
  */
-function getPositivesCount(/* arr */) {
-  throw new Error('Not implemented');
-  // return arr.filter((el) => typeof el === 'number' && el > 0);
+function getPositivesCount(arr) {
+  const res = arr.filter((el) => typeof el === 'number' && el > 0);
+  return res.length;
 }
-
 /**
  * Sorts digit names
  *
