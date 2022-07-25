@@ -567,7 +567,6 @@ function getElementByIndexes(/* arr, indexes */) {
  *
  */
 function swapHeadAndTail(arr) {
-  // throw new Error('Not implemented');
   const head = arr.slice(0, Math.round((arr.length - 1) / 2));
   const tail = arr.slice(Math.round(arr.length / 2), arr.length);
   const center = arr.slice(
