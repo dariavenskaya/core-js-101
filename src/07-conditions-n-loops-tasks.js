@@ -96,7 +96,6 @@ function getSumBetweenNumbers(/* n1, n2 */) {
  *   10,10,10 =>  true
  */
 function isTriangle(a, b, c) {
-  // throw new Error('Not implemented');
   return a + b > c && a + c > b && c + b > a;
 }
 
@@ -224,8 +223,8 @@ function getIntervalString(/* a, b, isStartIncluded, isEndIncluded */) {
  * 'rotator' => 'rotator'
  * 'noon' => 'noon'
  */
-function reverseString(/* str */) {
-  throw new Error('Not implemented');
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
 
 
